@@ -120,11 +120,11 @@ arr.splice(0,2,'DarkSalmon', 'BlanchedAlmond');
 
 console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
 
-//slice() can copy or extract part of an array and create a new array
-function forecast(arr) {
-arr = arr.slice(2,4);
-  return arr;
-}
+//slice() can copy or extract part of an array but does not change the array
+let array1 = [1,2,3,4];
+array1.slice(2,4); 
+alert(array1); //will return 1,2,3,4
+
 
 console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
 
