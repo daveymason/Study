@@ -69,3 +69,23 @@ arr.splice(0,2,'DarkSalmon', 'BlanchedAlmond');
 }
 
 console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
+
+//slice() can copy or extract part of an array and create a new array
+function forecast(arr) {
+arr = arr.slice(2,4);
+  return arr;
+}
+
+console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
+
+//
+function copyMachine(arr, num) {
+  let newArr = [];
+  while (num >= 1) {
+    newArr.push([...arr]);  //Initialise new variable with spread operator. Add new variable to the newArr for every iteration of the while loop.
+    num--;
+  }
+  return newArr;
+}
+
+console.log(copyMachine([true, false, true], 2));
