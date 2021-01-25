@@ -40,3 +40,14 @@ function mixedNumbers(arr) {
   }
   
   console.log(mixedNumbers(['IV', 5, 'six']));
+
+//Shift and pop
+//Diference is that neither method takes parameters, 
+//and each only allows an array to be modified by a single element at a time.
+function popShift(arr) {
+  let popped = arr.pop(); // Change this line
+  let shifted = arr.shift(); // Change this line
+  return [shifted, popped];
+}
+
+console.log(popShift(['challenge', 'is', 'not', 'complete']));
