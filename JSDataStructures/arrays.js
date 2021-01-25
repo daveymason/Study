@@ -11,7 +11,6 @@ alert(yourArray[0]);  //Will output 'one'
 //array.length() to show how many values in array
 console.log(yourArray.length);
 
-
 //There are also mutli-dimensial arrays that can store arrasy within arrays.
 let complexArray = [
     [
@@ -75,7 +74,6 @@ let item = colors.pop(); // gets the last item
 console.log(item); //"black"
 console.log(colors.length); // 2 (red & green because black was popped)
 
-
 //Queue methods shift() and push()
 //Push will add items to the end of the queue
 let colors = new Array(); // create an array
@@ -124,7 +122,6 @@ console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'Pal
 let array1 = [1,2,3,4];
 array1.slice(2,4); 
 alert(array1); //will return 1,2,3,4
-
 
 console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
 

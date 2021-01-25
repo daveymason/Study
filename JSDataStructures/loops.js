@@ -4,19 +4,27 @@ while (i=10) {
     1 +=2;
 }
 
+let count =0;
+while(count<10){
+    console.log(count);
+    count++
+}
+
 //Do While
 let i = 0;
 do {
     1+= 2;
 } while (i < 10);
 
+let count = 0;
+do{
+    count++;
+    console.log("count is "+ count);
+}while(count<10);
+
 //For
-let count  = 10;
-function saySomething() {
-    document.writeIn("Hello!");
-}
-for(let i =0; i < count; i++){
-    saySomething();
+for(let i = 1; i <=100; i+=2){
+    console.log(i);
 }
 
 //for(in)
