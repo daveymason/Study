@@ -78,7 +78,7 @@ arr = arr.slice(2,4);
 
 console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
 
-//
+//The function is supposed to return a new array made up of num copies of arr.
 function copyMachine(arr, num) {
   let newArr = [];
   while (num >= 1) {
