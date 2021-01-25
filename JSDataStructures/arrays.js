@@ -51,3 +51,21 @@ function popShift(arr) {
 }
 
 console.log(popShift(['challenge', 'is', 'not', 'complete']));
+
+//Splice can remove any number of consecutive elements from anywhere in an array.
+//Use splice() to remove elements from arr, so that it only contains elements that sum to the value of 10.
+const arr = [2, 4, 5, 1, 7, 5, 2, 1];
+
+arr.splice(3, 4);
+arr.splice(0,1);
+
+console.log(arr);
+
+//splice() can also add to an array with a third paramater within it's brackets
+//Remove the first two entries in the array and add DarkSalom and BlanchedAlmond
+function htmlColorNames(arr) {
+arr.splice(0,2,'DarkSalmon', 'BlanchedAlmond');
+  return arr;
+}
+
+console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
