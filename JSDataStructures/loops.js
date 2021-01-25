@@ -18,3 +18,17 @@ function saySomething() {
 for(let i =0; i < count; i++){
     saySomething();
 }
+
+//for(in)
+let array1 = ['all', 'cows', 'are', 'big'];
+
+for (let index in array1) {
+    console.log(array1[index]);
+}
+
+//forEach
+let array1 = ['all', 'cows', 'are', 'big']
+
+array1.forEach(function (element, index){
+    console.log(element);
+});

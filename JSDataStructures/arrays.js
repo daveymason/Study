@@ -1,5 +1,16 @@
+//Array Constructor
+let colors = new Array(20);
+
+//Array literal notation
+let colors =["red", "blue", "green"];
+
 //Arrays can have multiple data types. The most baic method of storing data. Above is a single dimensional array. 
-let yourArray = ['one', 2, 'three', false, 42]; 
+let yourArray = ['one', 2, 'three', false, 42];
+//Show value in an array 
+alert(yourArray[0]);  //Will output 'one'
+//array.length() to show how many values in array
+console.log(yourArray.length);
+
 
 //There are also mutli-dimensial arrays that can store arrasy within arrays.
 let complexArray = [
@@ -45,24 +56,63 @@ function mixedNumbers(arr) {
 //Diference is that neither method takes parameters, 
 //and each only allows an array to be modified by a single element at a time.
 function popShift(arr) {
-  let popped = arr.pop(); // Change this line
-  let shifted = arr.shift(); // Change this line
+  let popped = arr.pop(); 
+  let shifted = arr.shift(); 
   return [shifted, popped];
 }
 
 console.log(popShift(['challenge', 'is', 'not', 'complete']));
+
+//Stack behaviours push() and pop()
+let colors = new Array(); // create an array
+let count = colors.push("red", "green"); // push 2 items
+console.log(count); // 2
+
+count = colors.push("black"); //push 1 more item on
+console.log(count); //3
+
+let item = colors.pop(); // gets the last item
+console.log(item); //"black"
+console.log(colors.length); // 2 (red & green because black was popped)
+
+
+//Queue methods shift() and push()
+//Push will add items to the end of the queue
+let colors = new Array(); // create an array
+let count = colors.push("red", "green"); // push 2 items
+console.log(count); // 2
+
+count = colors.push("black"); //push 1 more item on
+console.log(count); //3
+
+//shift will take items from the front of the queue.
+let item = colors.shift(); //gets the first item
+console.log(item); //"red"
+console.log(colors.length); // 2 (green and black because red was shifted)
+
+//Unshift() will add a new item to the front of the queue and return the new array length
+let colors = new Array(); // create an array
+let count = colors.unshift("red", "green"); // push 2 items
+console.log(count); // 2
+
+count = colors.unshift("black"); //push 1 more item on
+console.log(count); //3 (array is [black,red,green])
+
+let item = colors.pop(); // gets the last item and removes it from array
+console.log(item); //"green"
+console.log(colors.length); // 2   
 
 //Splice can remove any number of consecutive elements from anywhere in an array.
 //Use splice() to remove elements from arr, so that it only contains elements that sum to the value of 10.
 const arr = [2, 4, 5, 1, 7, 5, 2, 1];
 
 arr.splice(3, 4);
-arr.splice(0,1);
+arr.splice(0, 1);
 
 console.log(arr);
 
 //splice() can also add to an array with a third paramater within it's brackets
-//Remove the first two entries in the array and add DarkSalom and BlanchedAlmond
+//Remove the first two entries in the array and add DarkSalomn and BlanchedAlmond
 function htmlColorNames(arr) {
 arr.splice(0,2,'DarkSalmon', 'BlanchedAlmond');
   return arr;
@@ -89,3 +139,4 @@ function copyMachine(arr, num) {
 }
 
 console.log(copyMachine([true, false, true], 2));
+
