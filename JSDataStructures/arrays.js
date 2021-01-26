@@ -144,4 +144,14 @@ function spreadOut() {
   return sentence;
 }
 
-console.log(spreadOut()); //learning to code is fune
+console.log(spreadOut()); //learning to code is fun
+
+//indexOf - Check for the existence of an element within an array
+function quickCheck(arr, elem) {
+  if (arr.indexOf(elem) >= 0) {
+    return true;
+  }
+  return false;
+}
+
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
