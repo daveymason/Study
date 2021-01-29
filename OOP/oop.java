@@ -7,8 +7,8 @@ public class Car {
     private String engine;
     private String colour;
 
-    public void setModel(String model) {
-        Strong validModel.model.toLowerCase();
+    public void setModel(String model) {   /* Encapsulation */
+        Strong validModel.model.toLowerCase(); 
         if(validModel.equals("carrera") || validMOdel.equals("commodre")){
             this.model = model;
         } else {
