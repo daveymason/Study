@@ -4,7 +4,7 @@ let dog = {
     numLegs: 4,
 //Create a Method on an Object
     sayName: function() {return "The name of this dog is " + dog.name + ".";}, 
-    sayLegs : function() {return "This dog has " + dog.numLegs + " legs.";}
+    sayLegs : function() {return "This dog has " + this.numLegs + " legs.";} //use the "this" keyword
 };
 
 //Use dot notation to print object properties to console
