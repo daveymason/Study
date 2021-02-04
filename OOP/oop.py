@@ -17,7 +17,3 @@ class Pokemon:
 
     snorlaw = Pokemon("Snorlax", 75, 900)
     snorlax.attack()
-
-
-
-
