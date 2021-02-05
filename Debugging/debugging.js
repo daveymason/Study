@@ -7,3 +7,10 @@ a++;
 
 let sumAB = a + b;
 console.log(a);
+
+//Using typeof to check the type of varibalelet seven = 7;
+let three = "3";
+console.log(seven + three);
+
+console.log(typeof seven);
+console.log(typeof three);
