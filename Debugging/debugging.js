@@ -14,3 +14,7 @@ console.log(seven + three);
 
 console.log(typeof seven);
 console.log(typeof three);
+
+//Catch the single and double quote marks
+let innerHtml = "<p>Click here to <a href='#Home'>return home</a></p>";
+console.log(innerHtml);
