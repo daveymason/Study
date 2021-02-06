@@ -54,3 +54,10 @@ function getNine() {
   }
   
   countToFive();
+
+  //All this code a way to terminate 
+  function myFunc() {
+    for (let i = 1; i <= 4; i += 2) { //changed from i!=4
+      console.log("Still going!");
+    }
+  }
