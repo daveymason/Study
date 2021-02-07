@@ -81,7 +81,7 @@ let foods = {
   };
   
   function isEveryoneHere(obj) {
-    // Only change code below this line
+ 
     if (
       obj.hasOwnProperty("Alan") &&
       obj.hasOwnProperty("Jeff") &&
@@ -92,7 +92,17 @@ let foods = {
     }
     return false;
   }
-    // Only change code above this line
-  
-  
+
   console.log(isEveryoneHere(users));
+
+
+  //Iterate Through the Keys of an Object with a for...in Statement
+  function countOnline(usersObj) {
+    let result = 0;
+    for (let user in usersObj) { //cycle through the object using  for...in statement
+      if (usersObj[user].online === true) { //check if each user is online
+        result++; //returns 1 if the user is online
+      }
+    }
+    return result;
+  }
