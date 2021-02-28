@@ -162,3 +162,10 @@ let foods = {
   }
   
   console.log(addFriend(user, 'Pete'));
+
+  //Define a constructor
+  function Dog() {
+    this.name = "Max";
+    this.color = "White";
+    this.numLegs = 4;
+}
