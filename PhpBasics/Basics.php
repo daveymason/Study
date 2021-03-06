@@ -33,3 +33,31 @@ echo AGE;
 
 //Outputs: 28
 ?>
+
+DataTypes
+
+
+<?php
+
+//String
+$string1 = "Hello!" //Double quotes
+$String2 = 'Hello!'
+
+//Integer
+$int1 = 42;
+$int2 = -42;
+
+//Float
+$x = 42.168;
+
+//Boolean
+$x = true;
+$y =  false;
+
+//Php automatically converts data types
+$str = "10";
+$int = 20;
+$sum = $str + $int;
+echo ($sum);
+
+//30
