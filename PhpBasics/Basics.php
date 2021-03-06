@@ -40,8 +40,8 @@ DataTypes
 <?php
 
 //String
-$string1 = "Hello!" //Double quotes
-$String2 = 'Hello!'
+$string1 = "Hello!"; //Double quotes
+$string2 = 'Hello'; //Why error?
 
 //Integer
 $int1 = 42;
