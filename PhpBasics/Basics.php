@@ -59,5 +59,21 @@ $str = "10";
 $int = 20;
 $sum = $str + $int;
 echo ($sum);
-
 //30
+
+//Variable Scope - Global
+$name = 'David';
+function getName(){
+    global $name;   //use global keyword to acces a global variable from within a function
+    echo $name;
+}
+getName()
+//Outputs 'David'
+
+//Variable Variables
+$a = 'hello';
+$hello = "Hi!";
+echo $$a
+//outputs 'Hi!'
+
+//$$a is a variable that is using the value of another variable
