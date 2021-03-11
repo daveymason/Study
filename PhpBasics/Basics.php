@@ -77,3 +77,20 @@ echo $$a
 //outputs 'Hi!'
 
 //$$a is a variable that is using the value of another variable
+
+//Operators 
+$num1 = 23;
+$num2 = 16;
+
+echo $num1 - $num2;
+
+//Modulus
+$x = 14;
+$y = 3;
+echo $x % $y; //2
+
+//Increment and Decrement
+$x++; // post-increment 
+$x--; // post-decrement 
+++$x; // pre-increment 
+--$x; // pre-decrement
