@@ -94,3 +94,8 @@ $x++; // post-increment
 $x--; // post-decrement 
 ++$x; // pre-increment 
 --$x; // pre-decrement
+
+//Assignment operators
+$a = 7; $b = 3; 
+$a += $b;
+echo $a; //10
