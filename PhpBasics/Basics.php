@@ -99,3 +99,8 @@ $x--; // post-decrement
 $a = 7; $b = 3; 
 $a += $b;
 echo $a; //10
+
+//Logical Operators
+$x && $y //true if both are true
+$x || $y //true if either are true
+!$x //true if x is not true
