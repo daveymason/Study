@@ -10,3 +10,11 @@ $people = array("David"=>"27", "Amy"=>"21", "John"=>"42");
 echo $people['Amy']; //Outputs 21
 
 //Multi-dimensial arrays
+$people = array(
+    'online'=>array('David', 'Amy'),
+    'offline'=>array('John', 'Rob', 'Jack'),
+    'away'=>array('Arthur', 'Daniel')
+ );
+
+ echo $people['online'][0]; //Outputs "David"
+ echo $people['away'][1]; //Outputs "Daniel"
