@@ -8,3 +8,5 @@ echo $names[1]; //outputs "Amy"
 $people = array("David"=>"27", "Amy"=>"21", "John"=>"42");
 //Syntax is "key" => "value"
 echo $people['Amy']; //Outputs 21
+
+//Multi-dimensial arrays
