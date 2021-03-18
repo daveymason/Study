@@ -18,3 +18,5 @@ $people = array(
 
  echo $people['online'][0]; //Outputs "David"
  echo $people['away'][1]; //Outputs "Daniel"
+
+ //The arrays in the multi-dimensional array can be both numeric and associative.
