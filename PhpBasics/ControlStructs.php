@@ -11,7 +11,7 @@ if ($age > 18)
 $x = 10;
 $y = 20;
 
-if $x >= $y {
+if ($x >= $y) {
     echo $x;
 } else { 
     echo $y;
