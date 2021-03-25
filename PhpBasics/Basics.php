@@ -67,11 +67,11 @@ function getName(){
     global $name;   //use global keyword to acces a global variable from within a function
     echo $name;
 }
-getName()
+getName();
 //Outputs 'David'
 
 //Variable Variables
-$a = 'hello'; 
+$a = "hello"; 
 $hello = "Hi!";
 echo $$a
 //outputs 'Hi!'

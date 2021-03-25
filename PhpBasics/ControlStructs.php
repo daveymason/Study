@@ -43,4 +43,9 @@ do {  echo "Hello"; }
 while($i < 0);
 //Will still run once
 
-//The for Loop
+//For Loop
+for ($a = 0; $a<6; $a++){
+    echo "Value of a : ". $a . "<br />";
+}
+
+//Value of a : 0    goes down a line upto 5
