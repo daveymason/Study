@@ -49,3 +49,9 @@ for ($a = 0; $a<6; $a++){
 }
 
 //Value of a : 0    goes down a line upto 5
+
+$items = array("one", "two", "three");
+
+foreach ($items as $item){
+   echo $item ."<br />";
+}
