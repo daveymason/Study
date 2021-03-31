@@ -86,3 +86,12 @@ switch ($today) {
 }
 
 //outputs Today is Tuesday
+
+//break
+for ($i=0;$i<=50;$i++)  {
+
+    echo $i;
+    if ($i==5) {
+    break;
+    }
+  }
