@@ -104,4 +104,23 @@ for ($i=0;$i<=50;$i++)  {
   continue;
   }
     echo $i."<br />";
-  }
+  } 
+  //outputs all numbers except for those between 10 and 14
+
+ 
+
+//Include 
+?>
+<html>
+  <body>
+
+  <?php include 'header.php'; ?>
+
+  <p>Use require when the file is required 
+    for the application to run.
+    Use include when the file is not required. 
+    The application should continue,
+    even when the file is not found.</p>
+  </body>
+</html>
+
