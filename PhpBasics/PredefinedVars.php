@@ -51,3 +51,5 @@ if(isset($_COOKIE['user'])) {
   echo "Value is: ". $_COOKIE['user'];
 }
 //Outputs "Value is: John"
+
+//The setcookie() function must appear BEFORE the <html> tag.
