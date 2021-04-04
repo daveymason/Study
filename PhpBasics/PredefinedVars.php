@@ -30,3 +30,24 @@ Your age: <?php echo $_POST["age"]; ?>
 
 </body>
 </html>
+<?
+
+//Sessions
+//session_start() function
+session_start();
+
+$_SESSION['color'] = "red";
+$_SESSION['name'] = "John";
+
+//Now, the color and name session variables are accessible on multiple pages, throughout the entire session.(Until broswer closed)
+
+//Cookies
+setcookie(name, value, expire, path, domain, secure, httponly);
+
+$value = "John";
+setcookie("user", $value, time() + (86400 * 30), '/'); 
+
+if(isset($_COOKIE['user'])) {
+  echo "Value is: ". $_COOKIE['user'];
+}
+//Outputs "Value is: John"
