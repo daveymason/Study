@@ -73,7 +73,7 @@ getName();
 //Variable Variables
 $a = "hello"; 
 $hello = "Hi!";
-echo $$a
+echo $$a;
 //outputs 'Hi!'
 
 //$$a is a variable that is using the value of another variable
@@ -101,7 +101,7 @@ $a += $b;
 echo $a; //10
 
 //Logical Operators
-$x && $y //true if both are true
-$x || $y //true if either are true
-!$x //true if x is not true
+$x && $y; //true if both are true
+$x || $y; //true if either are true
+!$x; //true if x is not true
 
