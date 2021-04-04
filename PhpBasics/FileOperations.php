@@ -11,7 +11,7 @@ fwrite($myfile, $txt);
 $txt = "David\n";
 fwrite($myfile, $txt);
 
-fclose($myfile);
+fclose($myfile); // closes an open file and returns TRUE on success or FALSE on failure.
 
 /* File contains:
 John
