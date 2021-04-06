@@ -23,3 +23,18 @@
     echo $user2->name;
     echo '<br>';
     echo $user2->sayHello();
+
+    class Person {
+        public $age; //property
+        public function speak() { //method
+          echo "Hi!"
+        }
+      }
+
+    class Student {
+     public $name;
+     public $age;
+     
+    public function sayHi() { 
+        echo "Hi!"; } 
+     }
