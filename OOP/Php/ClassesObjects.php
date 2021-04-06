@@ -24,6 +24,23 @@
     echo '<br>';
     echo $user2->sayHello();
 
+    //This Keyword
+    class Dog {
+        public $legs=4;
+        public function display() {
+            echo $this->legs;
+        }
+    }
+    $d1 = new Dog();
+    $d1->display();
+    
+    echo '<br />';
+    
+    $d2 = new Dog();
+    $d2->legs = 2;
+    $d2->display();
+
+
     /* *********************
     ********PRACTICE********
     ************************ */
@@ -72,13 +89,14 @@
     }
 
     $c1 = new Car();
+    $c1->brand = Toyota;
     $c1->honk();
     echo brand;
 
     class Pokemon{
         public $type;
         function typeOutput(){
-            echo "Say Type";
+            echo $this->type;
         }
     }
 
