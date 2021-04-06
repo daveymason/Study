@@ -86,12 +86,16 @@
         function honk(){
             echo "Beep beep";
         }
+        function brandName(){
+            echo $this->brand;
+        }
     }
 
     $c1 = new Car();
     $c1->brand = Toyota;
     $c1->honk();
-    echo brand;
+    echo brand; // Toyota
+    $c1->brandName(); // Toyota
 
     class Pokemon{
         public $type;
