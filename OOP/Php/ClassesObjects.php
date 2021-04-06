@@ -24,6 +24,10 @@
     echo '<br>';
     echo $user2->sayHello();
 
+    /* *********************
+    ********PRACTICE********
+    ************************ */
+
     class Person {
         public $age; //property
         public function speak() { //method
