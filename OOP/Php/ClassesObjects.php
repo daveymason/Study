@@ -27,7 +27,7 @@
     class Person {
         public $age; //property
         public function speak() { //method
-          echo "Hi!"
+          echo "Hi!";
         }
       }
 
@@ -38,3 +38,20 @@
     public function sayHi() { 
         echo "Hi!"; } 
      }
+
+//Creating an object of a class is called instantiation.
+    $bob = new Person();
+    echo $bob->age;
+
+    /*Define the Person class, instantiate an object, 
+    make an assignment, and call the speak() method*/
+    class Person {
+        public $age;
+        function speak() {
+            echo "Hi!";
+        }
+    }
+    $p1 = new Person(); // Instantiate an object
+    $p1->age = 23;   // Assignment
+    echo $p1->age;   // 23
+    $p1->speak();    // Hi!
