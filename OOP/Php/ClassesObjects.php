@@ -50,8 +50,12 @@
         function speak() {
             echo "Hi!";
         }
+        function shout() {
+            echo "AAAAAAHHHHHH!";
+        }
     }
     $p1 = new Person(); // Instantiate an object
     $p1->age = 23;   // Assignment
     echo $p1->age;   // 23
     $p1->speak();    // Hi!
+    $p1->shout();    // AAAAAAHHHHHH!
