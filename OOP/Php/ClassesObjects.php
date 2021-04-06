@@ -59,3 +59,25 @@
     echo $p1->age;   // 23
     $p1->speak();    // Hi!
     $p1->shout();    // AAAAAAHHHHHH!
+
+    class Car{
+        public $brand;
+        function honk(){
+            echo "Beep beep";
+        }
+    }
+
+    $c1 = new Car();
+    $c1->honk();
+    echo brand;
+
+    class Pokemon{
+        public $type;
+        function typeOutput(){
+            echo "Say Type";
+        }
+    }
+
+    $pokemon1 = new Pokemon();
+    $pokemon1->$type = "fire";
+    $pokemon1->typeOutput();  //fire
