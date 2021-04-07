@@ -13,3 +13,23 @@ class Person{
 }
 
 $p = new Person("Davey", 42);
+
+//Destructor
+
+class Person {
+    public function __destruct() {
+        echo "Object destroyed";
+    }
+}
+$p = new Person();
+
+//Example 1
+class TestMe {
+    public function __construct() { echo "2"; }
+    public function __destruct() { echo "1"; }
+  }
+  $test = new TestMe();
+  unset($test);
+
+  //Outputs "21"
+  
