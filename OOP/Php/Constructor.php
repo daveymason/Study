@@ -33,3 +33,40 @@ class TestMe {
 
   //Outputs "21"
   
+class user{
+    public $name;
+    public $age;
+
+    //Runs wehen an object instantiated
+    public function __construct($name, $age){
+        echo 'Class ' . __CLASS__ . 'instantiated'; //Magic constant that gives name of current class
+        $this-> name = $name;
+        $this-> age = $age;
+    }
+
+    public function sayHello(){
+        return $this->name . ' Says Hello';
+    }
+
+    //Default, called when no references to other objects
+    //used for cleanup and closing connections
+    public function __destruct(){
+        echo 'destructor ran...';
+    }
+}
+
+$user1 = new User('Dave', 30);   
+
+echo $user1->name . ' is ' . $user1->age . ' years old';
+//Outputs Dave is 30 years old
+echo'<br>';
+echo $user1->sayHello();
+//Outputs Dave says Hello
+
+$user2 = new User('Jun', 26);   
+
+echo $user2->name . ' is ' . $user2->age . ' years old';
+//Outputs Jun is 26 years old
+echo'<br>';
+echo $user2->sayHello();
+//Outputs Jun says Hello
