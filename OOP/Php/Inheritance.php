@@ -34,16 +34,13 @@ $myObj2 = new Cat();
 $myObj2->makeSound();
 
 //Practice
-class Musician {
+interface Musician {
     public $name;
-    public function toPlay() {
-
-    echo "Playing on piano";
-        }
+    public function toPlay() 
     }
 
-class Singer extends Musician {
+class Singer implements Musician {
     public function toPlay(){
-     echo ("Sings");
+     echo "Sings";
     }
 }
