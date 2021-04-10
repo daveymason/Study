@@ -35,8 +35,8 @@ $myObj2->makeSound();
 
 //Practice
 interface Musician {
-    public $name;
-    public function toPlay() 
+    public function toPlay();
+
     }
 
 class Singer implements Musician {
