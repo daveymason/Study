@@ -43,5 +43,7 @@ class Musician {
     }
 
 class Singer extends Musician {
-    //expand on this
+    public function toPlay(){
+     echo ("Sings");
+    }
 }
