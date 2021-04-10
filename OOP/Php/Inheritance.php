@@ -33,6 +33,26 @@ $myObj1->makeSound();
 $myObj2 = new Cat();
 $myObj2->makeSound();
 
+//Abstract Class
+abstract class Fruit { 
+    private $color; 
+    
+    abstract public function eat(); //A class inheriting from an abstract class must implement all the abstract methods.
+    
+    public function setColor($c) { 
+        $this->color = $c; 
+    } 
+} 
+
+class Apple extends Fruit {
+    public function eat() {
+        echo "Omnomnom";
+    }
+}
+
+$obj = new Apple();
+$obj->eat();
+
 //Practice
 interface Musician {
     public function toPlay();
@@ -44,3 +64,17 @@ class Singer implements Musician {
      echo "Sings";
     }
 }
+
+//Abstract class practice
+abstract class Calc { 
+    abstract public function calculate($param); 
+    protected function getConst() { return 4; }
+  } 
+  class FixedCalc extends Calc {
+    public function calculate($param) {
+      return $this->getConst() + $param;
+    }
+  }
+  $obj = new FixedCalc();
+  echo $obj->calculate(38);
+  //Outputs 42
