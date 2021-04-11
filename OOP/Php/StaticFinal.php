@@ -25,3 +25,25 @@ class Father {
         echo "Hi!";
       }
     }
+
+//Practice
+class User {
+    public $name;
+    public $age;
+    public static $minPassLength = 6; //can use this without instantating an object
+
+    public static function validatePass($pass){
+        if(strlen($pass) >= self::$minPassLength){ //don't use $this with static
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+
+$password = 'Hello';
+if(User::validatePass()){
+    echo 'Password valid';
+    } else {
+        echo 'Password NOT valid';
+}
