@@ -1,4 +1,4 @@
-//Basics of debugging in js
+//Basics of debugging in js from FreeCodeCamp
 
 //Find the value of a varibale using console.log
 let a = 5;

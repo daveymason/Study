@@ -43,3 +43,25 @@ console.log('The value of levelUp:', levelUp);
 console.log('The value of powerLevel:', powerLevel); 
 console.log('The value of multiplyMe:', multiplyMe); 
 console.log('The value of quarterMe:', quarterMe);
+
+//Increment and Decrement Operator
+let gainedDollar = 3;
+let lostDollar = 50;
+
+gainedDollar++;
+lostDollar--;
+
+//String Concatination
+var favoriteAnimal = 'Dog';
+console.log('My favorite animal:' + favoriteAnimal)
+
+//String Interpolation
+var myName = 'Davey';
+var myCity = 'Eindhoven';
+console.log(`My name is ${myName}. My favorite city is ${myCity}`);
+
+//typeof
+let newVariable = 'Playing around with typeof.';
+console.log(typeof newVariable);
+newVariable = 1;
+console.log(typeof newVariable);
