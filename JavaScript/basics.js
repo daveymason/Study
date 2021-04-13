@@ -59,6 +59,11 @@ let lostDollar = 50;
 gainedDollar++;
 lostDollar--;
 
+//Data Types
+var age = 18;
+var name = "Davey";
+var isUser = true;
+
 //String Concatination
 var favoriteAnimal = 'Dog';
 console.log('My favorite animal:' + favoriteAnimal)
@@ -73,3 +78,4 @@ let newVariable = 'Playing around with typeof.';
 console.log(typeof newVariable);
 newVariable = 1;
 console.log(typeof newVariable);
+
