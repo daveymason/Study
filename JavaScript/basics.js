@@ -1,3 +1,9 @@
+//Output
+document.write('Used only for testing');
+
+//Output to console
+console.log('Output to console');
+
 //Variables
 var studentName = 'Davey';
 
@@ -24,6 +30,8 @@ entree = 'Tacos'  //Will throw an error
 
 // // Math operators
 // + "plus", - "minus", * "multiply", / "divide"
+
+var x = 10;
 
 let levelUp = 10;
 let powerLevel = 9001;
