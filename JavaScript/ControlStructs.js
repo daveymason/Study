@@ -78,3 +78,12 @@ while (x <= 5){
     console.log(x);
     x++;
 }
+
+//Do While
+var i=20;
+do{
+    document.write(i + "<br />");
+    i++
+}
+while (i<=25); //Prints out 20-25
+//Do loop always executes once even if the condition is false
