@@ -53,3 +53,28 @@ let tool = 'marker';  //if this is blank writingUtensil is 'pen'
 let writingUtensil = tool || 'pen'; //sets default value of pen if tool is false
 
 console.log(`The ${writingUtensil} is mightier than the sword.`);
+
+//Switch
+var x = 3;
+switch (x) {
+  case 1:
+    document.write(x);
+    break;
+  case 2:
+    document.write(x+2);
+    break;
+  default:
+    document.write(x+5);
+} //outputs 8
+
+//For Loop
+for (i=1; i<5; i++){
+    document.write(i + "<br />");
+} //Prints 1 - 5 with a new line
+
+//While Loop
+var x=1;
+while (x <= 5){
+    console.log(x);
+    x++;
+}
