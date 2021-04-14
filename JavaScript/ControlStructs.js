@@ -30,6 +30,7 @@ if (mood=== 'sleepy' && tirednessLevel > 8){
   console.log('not bed time yet')
 }
 
+//Another Example
 function orderMyLogic(val) {
   if (val < 10 && val >= 5) {
     return "Less than 10";
@@ -41,6 +42,27 @@ function orderMyLogic(val) {
 }
 
 orderMyLogic(4);
+
+//Multiple if else
+function testSize(num) {
+  // Only change code below this line
+if (num < 5){
+  return "Tiny"
+}else if (num >=5 && num < 10){
+  return "Small"
+}else if(num >=10 && num < 15){
+  return "Medium"
+}else if(num >=15 && num < 20){
+  return "Large"
+}else if(num >=20 && num <= 25){
+  return "Huge"
+}
+
+  return "Change Me";
+  // Only change code above this line
+}
+
+testSize(7);
 
 //Having values example
 let wordCount = 1;
