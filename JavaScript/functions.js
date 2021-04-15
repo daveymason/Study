@@ -61,3 +61,6 @@ const plantNeedsWater = function(day){
       return false;
     }
   };
+
+  //Concise Arrow and Ternary operator
+  const plantNeedsWater = day => day === 'Wednesday' ? true : false;
