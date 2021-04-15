@@ -130,6 +130,24 @@ switch (x) {
     document.write(x+5);
 } //outputs 8
 
+//Switch Example
+let athleteFinalPosition = 'first place';
+
+switch (athleteFinalPosition){
+  case 'first place':
+    console.log('You get the gold medal!');
+  break;
+  case 'second place':
+    console.log('You get the silver medal!');
+  break;
+  case 'third place':
+    console.log('You get the bronze medal!');
+  break;
+  default:
+    console.log('No medal awarded.');
+    break;
+}
+
 //For Loop
 for (i=1; i<5; i++){
     document.write(i + "<br />");
