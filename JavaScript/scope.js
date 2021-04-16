@@ -18,3 +18,12 @@ const callMyNightSky = () => {
 }
 
 console.log(callMyNightSky());
+
+//Block Scope
+//Var defined in a block
+const logVisibleLightWaves = () => {
+    const lightWaves = 'Moonlight';
+    console.log(lightWaves);
+  }
+
+  
