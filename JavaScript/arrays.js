@@ -178,3 +178,30 @@ let myNestedArray = [
   [[["deeper"]],'mutate', 1327.98, 'splice', 'slice', 'push'],
   [[[["deepest"]]],'iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth']
 ];
+
+//forEach
+const months = ['January', 'February', 'March', 'April'];
+
+months.forEach(function(month) {
+  console.log(month);
+});
+
+/* output
+
+January
+February
+March
+April
+
+*/
+
+//Same thing but with a foor loop
+for(let i = 0; i < months.length; i++) {
+  console.log(months[i]);
+}
+
+const pokemon = ['pikachu', 'charmander', 'squirtle', 'gengar' ];
+
+pokemon.forEach(function(pokemonList){
+  console.log(pokemonList);
+});
