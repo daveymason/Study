@@ -206,3 +206,12 @@ const pokemon = ['pikachu', 'charmander', 'squirtle', 'gengar' ];
 pokemon.forEach(function(pokemonList){
   console.log(pokemonList);
 });
+
+//Map
+const months = ['January', 'February', 'March', 'April'];
+const transformedArray = months.map(function (month) {
+  return month.toUpperCase();
+});
+
+console.log(transformedArray); 
+// ["JANUARY", "FEBRUARY", "MARCH", "APRIL"]
