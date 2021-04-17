@@ -200,6 +200,7 @@ for(let i = 0; i < months.length; i++) {
   console.log(months[i]);
 }
 
+//practice
 const pokemon = ['pikachu', 'charmander', 'squirtle', 'gengar' ];
 
 pokemon.forEach(function(pokemonList){
