@@ -221,3 +221,20 @@ console.log(transformedArray);
 //Push
 var myArray = [["John", 23], ["cat", 2]];
 myArray.push(['dog',3]);
+//Adds a new array of [dog,3]
+
+//Pop
+var myArray = [["John", 23], ["cat", 2]];
+var removedFromMyArray = myArray.pop();
+//Removes ['cat',2]
+
+
+//Shift
+var myArray = [["John", 23], ["dog", 3]];
+var removedFromMyArray = myArray.shift();
+//Removes ['John',23]
+
+//Unshift
+var myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+myArray.unshift(["Paul",35]);
