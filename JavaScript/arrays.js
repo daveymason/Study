@@ -215,3 +215,9 @@ const transformedArray = months.map(function (month) {
 
 console.log(transformedArray); 
 // ["JANUARY", "FEBRUARY", "MARCH", "APRIL"]
+
+//Practice and relearing
+
+//Push
+var myArray = [["John", 23], ["cat", 2]];
+myArray.push(['dog',3]);
