@@ -238,3 +238,30 @@ var removedFromMyArray = myArray.shift();
 var myArray = [["John", 23], ["dog", 3]];
 myArray.shift();
 myArray.unshift(["Paul",35]);
+
+//Shift, Unshift, IndexOf
+const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
+
+groceryList.shift();
+groceryList.unshift('popcorn');
+console.log(groceryList.slice(1,4)); //From 3 - 5
+console.log(groceryList);
+const pastaIndex = groceryList.indexOf('pasta');
+console.log(pastaIndex);
+
+//Arays and Functions
+const concept = ['arrays', 'can', 'be', 'mutated'];
+
+function changeArr(arr){
+  arr[3] = 'MUTATED';
+}
+
+changeArr(concept);
+console.log(concept);
+
+function removeElement(newArr){
+  newArr.pop();
+}
+
+removeElement(concept);
+console.log(concept);
