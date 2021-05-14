@@ -1,7 +1,7 @@
 //While
 let i = 0;
-while (i=10) {
-    1 +=2;
+while (i<10) {
+    console.log("i = " i +=2);
 }
 
 let count =0;
@@ -21,6 +21,29 @@ do{
     count++;
     console.log("count is "+ count);
 }while(count<10);
+
+//Break
+i = 0;
+
+let earlyEscapeNum = 6;
+while(1<10){
+    if (i = earlyEscapeNum){
+        break;
+    }
+    console.log("The iterator is", i);
+    i++
+}
+
+//Continue
+i = 0;
+let skipNum = 6;
+while(i<10){
+    i++;
+    if( i ==skipNum) {
+        continue;
+    }
+    console.log("The iuterator is", i);
+}
 
 //For
 for(let i = 1; i <=100; i+=2){
