@@ -12,10 +12,3 @@ let dog = {
 
   dog.sayName(); // Output the sayName method
   dog.sayLegs(); // Output the sayLegs method
-
-  //Constructor
-  function Dog() {
-    this.name = "Boo Boo";
-    this.color = "Light Brown";
-    this.numLegs = 8;
-  }
