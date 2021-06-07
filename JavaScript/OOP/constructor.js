@@ -25,6 +25,51 @@ function Dog() {
     } 
  }
  
+ //Another example
+ class Monster {
+  constructor(type, color) {
+      this.type = type;
+      this.color = color;
+      this.isScary = true;
+  }
+  roar() {
+      console.log(`The ${this.color} ${this.type} lets out a tremendous roar!`);
+  }
+}
+
+//with Inheritance
+class Dragon extends Monster {
+  constructor(type, color, element) {
+      super(type, color); //super allows us to pass properties that are inherited and be initialised
+      this.element = element;
+  }
+  fly() {
+      console.log(`The ${this.color} ${this.element} ${this.type} flaps its wings and begins to fly.`);
+  }
+}
+
+//create method
+const dragon1 = new Dragon("dragon", "blue", "water");
+dragon1.roar();
+dragon1.isScary;
+dragon1.fly();
+
+//Another child class
+class Werewolf extends Monster {
+  constructor(type, color) {
+      super(type, color);
+  }
+  howl() {
+      console.log(`The ${this.type} howls loudly.`);
+  }
+}
+
+//New Warewolf object
+const werewolf1 = new Werewolf("werewolf", "gray");
+werewolf1.roar();
+werewolf1.isScary;
+werewolf1.howl();
+
  //Verify an Object's Constructor with instanceof
  let Bird = function(name, color) {
     this.name = name;
@@ -60,6 +105,4 @@ function Dog() {
   }
   Dog.prototype.numLegs = 4;   //adds numLegs =4 to all objects in the Dos constructor. 
   
-  
-  // Only change code above this line
   let beagle = new Dog("Snoopy");
