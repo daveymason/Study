@@ -36,7 +36,6 @@ function Dog() {
   
   crow instanceof Bird; //returns true
 
-  
 
   //Own properties
   function Bird(name) {
@@ -54,3 +53,13 @@ function Dog() {
   }
   
   console.log(ownProps);
+
+  //Prototype
+  function Dog(name) {
+    this.name = name;
+  }
+  Dog.prototype.numLegs = 4;   //adds numLegs =4 to all objects in the Dos constructor. 
+  
+  
+  // Only change code above this line
+  let beagle = new Dog("Snoopy");
