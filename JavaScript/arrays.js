@@ -265,3 +265,26 @@ function removeElement(newArr){
 
 removeElement(concept);
 console.log(concept);
+
+//Advanced Methods
+
+//iterate through this array and, for example, double each number. #
+
+const arr1 = [5, 21, 8, 100];
+
+//for
+for (let i=0; i < arr1.length; i++) {
+  arr2[i] = arr1 * 2;
+}
+console.log(arr2);
+
+//forEach
+const arr3 = [];
+arr1.forEach((n,i) => {arr3[i] = n*2; });
+console.log(arr3);
+
+const arr4 = arr1.map(n=> n * 2);
+console.log(arr4);
+
+
+
