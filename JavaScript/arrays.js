@@ -4,14 +4,14 @@ let colors = new Array(20);
 //Array literal notation
 let colors =["red", "blue", "green"];
 
-//Arrays can have multiple data types. The most baic method of storing data. Above is a single dimensional array. 
+//Arrays can have multiple data types. The most basic method of storing data. Above is a single dimensional array. 
 let yourArray = ['one', 2, 'three', false, 42];
 //Show value in an array 
 alert(yourArray[0]);  //Will output 'one'
 //array.length() to show how many values in array
 console.log(yourArray.length);
 
-//There are also mutli-dimensial arrays that can store arrasy within arrays.
+//There are also multi-dimensional arrays that can store array within arrays.
 let complexArray = [
     [
       {
@@ -52,7 +52,7 @@ function mixedNumbers(arr) {
   console.log(mixedNumbers(['IV', 5, 'six']));
 
 //Shift and pop
-//Diference is that neither method takes parameters, 
+//Difference is that neither method takes parameters, 
 //and each only allows an array to be modified by a single element at a time.
 function popShift(arr) {
   let popped = arr.pop(); 
@@ -62,7 +62,7 @@ function popShift(arr) {
 
 console.log(popShift(['challenge', 'is', 'not', 'complete']));
 
-//Stack behaviours push() and pop()
+//Stack behaviors push() and pop()
 let colors = new Array(); // create an array
 let count = colors.push("red", "green"); // push 2 items
 console.log(count); // 2
@@ -109,8 +109,8 @@ arr.splice(0, 1);
 
 console.log(arr);
 
-//splice() can also add to an array with a third paramater within it's brackets
-//Remove the first two entries in the array and add DarkSalomn and BlanchedAlmond
+//splice() can also add to an array with a third parameter within it's brackets
+//Remove the first two entries in the array and add DarkSalmon and BlanchedAlmond
 function htmlColorNames(arr) {
 arr.splice(0,2,'DarkSalmon', 'BlanchedAlmond');
   return arr;
@@ -140,7 +140,7 @@ console.log(copyMachine([true, false, true], 2));
 //Combine arrays with a spread operator
 function spreadOut() {
   let fragment = ['to', 'code'];
-  let sentence =[ 'learning', ...fragment, 'is', 'fun']; //adds fragment arry in that location
+  let sentence =[ 'learning', ...fragment, 'is', 'fun']; //adds fragment array in that location
   return sentence;
 }
 
@@ -195,7 +195,7 @@ April
 
 */
 
-//Same thing but with a foor loop
+//Same thing but with a for loop
 for(let i = 0; i < months.length; i++) {
   console.log(months[i]);
 }
@@ -216,7 +216,7 @@ const transformedArray = months.map(function (month) {
 console.log(transformedArray); 
 // ["JANUARY", "FEBRUARY", "MARCH", "APRIL"]
 
-//Practice and relearing
+//Practice and relearning
 
 //Push
 var myArray = [["John", 23], ["cat", 2]];
@@ -249,7 +249,7 @@ console.log(groceryList);
 const pastaIndex = groceryList.indexOf('pasta');
 console.log(pastaIndex);
 
-//Arays and Functions
+//Arrays and Functions
 const concept = ['arrays', 'can', 'be', 'mutated'];
 
 function changeArr(arr){
@@ -283,8 +283,24 @@ const arr3 = [];
 arr1.forEach((n,i) => {arr3[i] = n*2; });
 console.log(arr3);
 
-const arr4 = arr1.map(n=> n * 2);
+//map
+const arr4 = arr1.map(n => n * 2);
 console.log(arr4);
+
+//return an array when a specific filter is met
+
+//Filter
+const arr1 = [1, 3, 7, 4, 9, 15];
+
+const arr2 = arr1.filter(n => n<7);
+console.log(arr1);
+console.log(arr2); //[1,3]
+
+//With strings
+const animals = ['bear', 'panda', 'penguin', 'osprey'];
+
+const filteredAnimals = animals.filter(animal => animal.includes('p'));
+console.log(filteredAnimals);
 
 
 
