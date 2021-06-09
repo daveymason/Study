@@ -303,4 +303,31 @@ const filteredAnimals = animals.filter(animal => animal.includes('p'));
 console.log(filteredAnimals);
 
 
+//reduce
+const arr1=[3,4,13,8,22];
+const reducedValue = arr1.reduce((a, n) => a + n);    //the n value si the same as map and filter, it updates a and then returns it at the end
+console.log(reducedValue); //50
 
+//Arrays of objects
+const desserts = [
+  { 
+     id: 0, 
+     type: "cake",
+     flavor: "chocolate",
+     cost: 4.50
+   },
+   {
+        id: 1,
+        type: "pie",
+        flavor: "pumpkin",
+        cost: 3.75
+   },
+   {
+        id: 2,
+        type: "donut",
+        flavor: "chocolate",
+        cost: 1.50 
+   }
+];
+const totalCost = desserts.reduce((total, dessert) => total + dessert.cost, 0);
+console.log(totalCost);
