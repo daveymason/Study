@@ -331,3 +331,10 @@ const desserts = [
 ];
 const totalCost = desserts.reduce((total, dessert) => total + dessert.cost, 0);
 console.log(totalCost);
+
+//map practice
+const numbers = [1,2,3];
+
+const doubleNum = numbers.map(n => n *2);
+console.log(numbers); //1,2,3
+console.log(doubleNum);//2,4,6
