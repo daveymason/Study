@@ -106,3 +106,27 @@ werewolf1.howl();
   Dog.prototype.numLegs = 4;   //adds numLegs =4 to all objects in the Dos constructor. 
   
   let beagle = new Dog("Snoopy");
+
+  //NuCamp Assignment
+  class Student{
+    constructor(name, email, community){
+      this.name = name;
+      this.email = email;
+      this.community = community;
+    }
+  }
+
+  class Bootcamp{
+    constructor(name, level, students = []){
+      this.name = name;
+      this.level= level;
+      this.students = students;
+    }
+    registerStudent(student){
+      let hasStudent = students.includes(this.email);
+        hasStudent == true ? console.log("Student already registered") : 
+          this.students.pop(this.email)
+          console.log(`Registering ${this.email} to the bootcamp Web Dev Fundamentals`);
+        return this.students;
+    }
+  }
