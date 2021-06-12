@@ -23,3 +23,9 @@ class Student{
         return this.students;
     }
   }
+
+  function hello(name) {
+    return {studentName: name};
+  }
+
+  const hello = name => {studentName: name};
