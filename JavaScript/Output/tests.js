@@ -10,15 +10,15 @@ class Student{
     constructor(name, level, students = []){
       this.name = name;
       this.level= level;
-      this.students= [];
+      this.students= students;
     }
-    registerStudent(student){
-      let hasStudent = this.students.includes(this.email);
+    registerStudent(Student){
+      let hasStudent = this.students.includes(Student.email);
         if(hasStudent === true){
             console.log("Student already registered");
         }else{ 
-          this.students.push(this.email)
-          console.log(`Registering ${this.email} to the bootcamp Web Dev Fundamentals`);
+          this.students.push(Student)
+          console.log(`Registering ${Student.email} to the bootcamp ${this.name}`);
         }
         return this.students;
     }
