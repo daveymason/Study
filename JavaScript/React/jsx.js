@@ -13,3 +13,28 @@ const JSX =
   </ul>
 </div>
 ;
+
+//Comments
+const JSX = (
+    <div>
+      <h1>This is a block of JSX</h1>
+      <p>Here's a subtitle</p>
+      {/* Comment*/}
+    </div>
+  );
+
+  //render to DOM
+  const JSX = (
+    <div>
+      <h1>Hello World</h1>
+      <p>Lets render this to the DOM</p>
+    </div>
+  );
+  ReactDOM.render(JSX, document.getElementById("challenge-node"));
+
+  //className
+  const JSX = (
+    <div className="myDiv">
+      <h1>Add a class to this div</h1>
+    </div>
+  );
