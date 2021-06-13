@@ -5,7 +5,7 @@ const JSX = <h1>Hello JSX!</h1>;
 const JSX =
 <div>
   <h1>Header</h1>
-  <p>Paragrapgh</p>
+  <p>Paragraph</p>
   <ul>
     <li>list item</li>
     <li>list item</li>
