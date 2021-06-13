@@ -38,3 +38,12 @@ const JSX = (
       <h1>Add a class to this div</h1>
     </div>
   );
+
+  //Stateless functinoal component
+  const MyComponent = function() {
+    return (
+        <div className='someDiv'>
+        <p>'Hello there'</p>
+        </div>
+    )
+  }
