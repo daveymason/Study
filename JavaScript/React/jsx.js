@@ -39,7 +39,7 @@ const JSX = (
     </div>
   );
 
-  //Stateless functinoal component
+  //Stateless functional component
   const MyComponent = function() {
     return (
         <div className='someDiv'>
