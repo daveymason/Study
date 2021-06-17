@@ -62,7 +62,7 @@
     }
   };
 
-  
+
 //propTypes
 const Items = (props) => {
     return <h1>Current Quantity of Items in Cart: {props.quantity}</h1>
@@ -82,5 +82,43 @@ const Items = (props) => {
     }
     render() {
       return <Items />
+    }
+  };
+
+ //this.props
+ class ReturnTempPassword extends React.Component {
+    constructor(props) {
+      super(props);
+  
+    }
+    render() {
+      return (
+          <div>
+              { /* Change code below this line */ }
+              
+              <p>Your temporary password is: <strong>{this.props.tempPassword}</strong></p>
+  
+              { /* Change code above this line */ }
+          </div>
+      );
+    }
+  };
+  
+  class ResetPassword extends React.Component {
+    constructor(props) {
+      super(props);
+  
+    }
+    render() {
+      return (
+          <div>
+            <h2>Reset Password</h2>
+            <h3>We've generated a new temporary password for you.</h3>
+            <h3>Please reset this password from your account settings ASAP.</h3>
+            { /* Change code below this line */ }
+            <ReturnTempPassword tempPassword="xxxxxxxx" />
+            { /* Change code above this line */ }
+          </div>
+      );
     }
   };
