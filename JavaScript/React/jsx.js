@@ -115,3 +115,43 @@ ReactDOM.render(
 	favoriteFoods, 
 	document.getElementById('app')
 );
+
+
+//map in JSX
+const strings = ['Home', 'Shop', 'About Me'];
+ 
+const listItems = strings.map(string => <li>{string}</li>);
+ 
+<ul>{listItems}</ul>
+
+//Full example 
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const people = ['Rowe', 'Prevost', 'Gare'];
+
+const peopleLis = people.map((person,i) =>
+  // expression goes here:
+  <li key={'person_' + i}>{person}</li>
+
+);
+
+// ReactDOM.render goes here:
+ReactDOM.render(<ul>{peopleLis}</ul>, document.getElementById('app'));
+
+
+
+//Render KEYS with .map
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const people = ['Rowe', 'Prevost', 'Gare'];
+
+const peopleLis = people.map((person,i) =>
+  // expression goes here:
+  <li key={'person_' + i}>{person}</li>
+
+);
+
+// ReactDOM.render goes here:
+ReactDOM.render(<ul>{peopleLis}</ul>, document.getElementById('app'));
