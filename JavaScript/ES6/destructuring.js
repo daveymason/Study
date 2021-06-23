@@ -28,6 +28,7 @@ const stats = {
   //Use destructuring assignment within the argument to the function half to send only max and min inside the function.
   const half = ({max, min}) => (max + min) / 2.0;
 
+
   //Practice
   const hotel = {
     id: 0,
@@ -40,5 +41,18 @@ const id= hotel.id;
 const city = hotel.city;
 const name = hotel.name;
 
+//Pass to a function - old way
+function logHotelInfo1(hotel){
+const id= hotel.id;
+const name= hotel.name;
+const city= hotel.city;
+console.log(`${id}: ${name} located in ${city}.`)
+};
+
 //new way
 const {id,city,name} = hotel;
+
+//Pass to a function - New Way
+function logHotelInfo2({id,name,city}) {
+console.log(`${id}: ${name} located in ${city}.`)
+};

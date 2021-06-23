@@ -151,3 +151,29 @@ class MyComponent extends React.Component{
       return <Items quantity={10}/>
     }
   };
+
+  //Practice 
+
+  import React from 'react'
+  //Functional
+
+  function App(props) {
+    return (
+      <div>
+        <h1>{props.whatever}</h1>
+      </div>
+    )
+  }
+
+  //class
+  class App extends React.Component{
+    render(){
+      return(
+        <div>
+          <h1>{this.props.whatever}</h1>
+        </div>
+      )
+    }
+  }
+
+  export default App
