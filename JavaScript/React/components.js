@@ -231,7 +231,18 @@ ReactDOM.render(<App />, document.getElementById("root"))
 class App extends React.Component {
   constructor() {
       super()     //This goes to the super class (React.Component) and takes stuff that's useful
-      this.state = {}
+      this.state = {
+        answer: "yes"
+      }
+  }
+
+  render() {
+    return(
+      <div>
+          <h1>Is state important to know?</h1>
+          <p>Answer: {this.state.answer}</p>
+      </div>
+    )
   }
 
 }
