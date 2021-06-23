@@ -226,3 +226,12 @@ class Greeting extends React.Component {
 
 
 ReactDOM.render(<App />, document.getElementById("root"))
+
+//Even more practice
+class App extends React.Component {
+  constructor() {
+      super()     //This goes to the super class (React.Component) and takes stuff that's useful
+      this.state = {}
+  }
+
+}
