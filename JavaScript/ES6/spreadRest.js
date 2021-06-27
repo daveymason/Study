@@ -30,3 +30,29 @@ const filter = (...args) => {
 }
 
 console.log(filter(1,2,3));// 1 
+
+//Computer Property names
+const myProperty = "foo";
+const myObject = {
+    [myProperty]: "This is a test"
+}
+console.log(myObject); //"This is a test"
+
+//Spread Practice with Arrays
+const chinesePeople = ['Jun', 'Li', 'Ping'];
+const irishPeople = ['Siobhain', 'Olan', 'Niamh']
+
+const people = [...irishPeople, ...chinesePeople]
+
+const moreIrishPeople = [...irishPeople, 'Taigh', 'Daithi', 'Fionnula'];
+
+const donkeysB = [...moreIrishPoeple, 24, {myObject}, ...chinesePeople];
+
+//Spread practice with Objects
+const objOne = {color: 'blue', height: 12}
+const objTwo = {material: 'platinum', width: 60}
+
+const objCombined = {...objOne, ...objTwo}
+
+//update object properties
+const objOneUpdate = {...objOne, height: 50}
