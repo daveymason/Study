@@ -20,10 +20,11 @@ class App extends Component {
 
     //Make sure that the name property matches what's in the state(from constructor)
     //Formik is a good library 
+    //handleSubmit would send the form data somewhere
 
     render(){
         return (
-            <form> 
+            <form onSubmit={this.handleSubmit}>   
             <input
                 type = "text"
                 name = "firstName" 
@@ -81,6 +82,8 @@ class App extends Component {
                 <h1>{this.state.firstName} {this.state.lastName}</h1>
                 <h2>You are a {this.state.gender}</h2>
                 <h2>Your favorite color is {this.state.favColor}</h2>
+
+            <button>Submit</button>
 
             </form>
         )
