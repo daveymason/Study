@@ -32,7 +32,6 @@ def void_function():
 
 # value returning functions
 def value_function():
-    print('This is a value function')
     return 'This is a value function'
 
 # built in functions
@@ -40,5 +39,33 @@ def built_in_function(string):
     print(string)
     return string
 
+print("Math Functions")
+
+abs_int = abs(-1)
+print(abs_int)
+
+int_to_float = float(100)
+print(int_to_float)
+
+float_to_int = int(1.23)
+print(float_to_int)
+print(max(1, 2, -5, 10, 0))
+print(min(1, 2, -5, 10, 0))
+print(pow(2, 3)) 
+print(round(51.6))
+
+
 # lambda functions
 lambda_function = lambda: print('This is a lambda function')
+lambda_function()
+
+lambda num: num * 2
+
+# TRhis is the same as 
+def double(num):
+    return num * 2
+
+total_cash = 0
+user_input = input('Enter a number: ')
+total_cash += int(user_input)
+print(total_cash)
